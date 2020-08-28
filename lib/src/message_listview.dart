@@ -140,7 +140,7 @@ class _MessageListViewState extends State<MessageListView> {
                     bool last = false;
                     bool showDate;
 
-                    if (widget.messages.length == 0) {
+                    if (widget.messages.isEmpty) {
                       first = true;
                     } else if (widget.messages.length - 1 == i) {
                       last = true;

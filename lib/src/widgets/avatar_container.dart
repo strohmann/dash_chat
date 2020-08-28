@@ -67,7 +67,7 @@ class AvatarContainer extends StatelessWidget {
                             : user.name[0])),
                   ),
                 ),
-                user.avatar != null && user.avatar.length != 0
+                user.avatar != null && user.avatar.isNotEmpty
                     ? Center(
                         child: ClipOval(
                           child: FadeInImage.memoryNetwork(
